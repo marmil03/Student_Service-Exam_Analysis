@@ -11,4 +11,4 @@ Second part was its realisation, it was done over 3 months (March-May 2021.) and
 Database isn't perfect, as expected, since its cruical part (design) was done when i had only the basic ideas about databases.\
 Most of its shortcomings i found when i was creating it in the third year.\
 \
-Database was created in Oracle Sql and the projects paper contains some PL/SQL examples.\
+Database was created in Oracle Sql and the projects' paper contains some PL/SQL examples.
