@@ -31,13 +31,13 @@ CREATE TABLE Čas (
 CREATE TABLE Žiro_Račun (
     Žr_Id                varchar2(30) NOT NULL,
     Fakultet_Fakultetid  varchar2(6) NOT NULL,
-	Stanje               integer NOT NULL
+    Stanje               integer NOT NULL
 );
 
 CREATE TABLE Članovi_Komisije (    
 	Komisija_Komisija_Id  varchar2(15) NOT NULL,
 	Predavač_Predavačid   varchar2(6) NOT NULL,
-    Datum_Pristupanja     date NOT NULL
+        Datum_Pristupanja     date NOT NULL
 );
 
 CREATE TABLE Izvor (
@@ -72,7 +72,7 @@ CREATE TABLE Uplata_Za_Ispit (
 CREATE TABLE Lista_Pitanja_Za_Ispit (
     Ispit_Ispitid            varchar2(10) NOT NULL,
     Ispit_Predmet_Predmetid  integer NOT NULL,
-	Pitanje_Pitanje_Id       varchar2(7) NOT NULL,
+    Pitanje_Pitanje_Id       varchar2(7) NOT NULL,
     Pitanje_Izvor_Id         varchar2(15) NOT NULL,
     Datum_Kreiranja          date NOT NULL,
     Broj_Pitanja             integer NOT NULL
@@ -96,13 +96,13 @@ CREATE TABLE Nivo_Studija (
 
 CREATE TABLE Obaveza (
     Obaveza_Id         varchar2(10) NOT NULL,
-	Datum_Zadavanja    date NOT NULL,
+    Datum_Zadavanja    date NOT NULL,
     Rok_Završetka      date NOT NULL,
     Broj_Bodova        integer NOT NULL,
     Opis_Obaveze       varchar2(50),
     Čas_Čas_Id         varchar2(6) NOT NULL,
     Student_Studentid  integer NOT NULL,
-	Završena		   integer
+    Završena	       integer
 );
 
 CREATE TABLE Pitanje (
@@ -116,8 +116,8 @@ CREATE TABLE Pitanje (
 
 CREATE TABLE Smer (
     Smerid                     varchar2(6) NOT NULL,
-	Fakultet_Fakultetid        varchar2(6) NOT NULL,
-	Naziv                      varchar2(30) NOT NULL,
+    Fakultet_Fakultetid        varchar2(6) NOT NULL,
+    Naziv                      varchar2(30) NOT NULL,
     Maksimalan_Broj_Studenata  integer NOT NULL
 );
 
@@ -147,7 +147,7 @@ CREATE TABLE Vreme_Polaganja (
 
 CREATE TABLE Plan_Ispita (
     Rednibr            integer NOT NULL,
-	Rok_ID			   varchar2(5) NOT NULL,
+    Rok_ID	       varchar2(5) NOT NULL,
     Datum_Polaganja    timestamp NOT NULL,
     Mesto_Polaganja    varchar2(20) NOT NULL,
     Predmet_Predmetid  integer NOT NULL
@@ -161,10 +161,10 @@ CREATE TABLE Predavač (
     "E-Mail"             varchar2(30) NOT NULL,
     Jmbg                 varchar2(13) NOT NULL,
     Akademsko_Zvanje     varchar2(30) NOT NULL,
-	Predmet_Predmetid    integer NOT NULL,
+    Predmet_Predmetid    integer NOT NULL,
     Izborno_Zvanje       varchar2(10),
     Plan_Ispita_Rednibr  integer,
-	Plan_Ispita_Rokid	 varchar2(5)
+    Plan_Ispita_Rokid	 varchar2(5)
 );
 
 CREATE TABLE Predmet (
@@ -176,19 +176,19 @@ CREATE TABLE Predmet (
 
 CREATE TABLE Ispit (
     Ispitid                            varchar2(10) NOT NULL,
-	Predmet_Predmetid                  integer NOT NULL,
+    Predmet_Predmetid                  integer NOT NULL,
     Overen_Semestar                    char(1) NOT NULL,
-    V_P_Vreme_Pid  					   varchar2(8) NOT NULL,
+    V_P_Vreme_Pid  		       varchar2(8) NOT NULL,
     Tip_Ispita_Tip_Ispita_Id           varchar2(10) NOT NULL,
     Komisija_Komisija_Id               varchar2(15) NOT NULL
 );
 
 CREATE TABLE Lista_Studenata_Na_Ispitu (
     Ispit_Ispitid            varchar2(10) NOT NULL,
-	Ispit_Predmet_Predmetid  integer NOT NULL,
+    Ispit_Predmet_Predmetid  integer NOT NULL,
     Student_Studentid        integer NOT NULL,
-	Uplatio                  char(1) NOT NULL,
-	Ocena					 integer 
+    Uplatio                  char(1) NOT NULL,
+    Ocena		     integer 
 );
 
 ALTER TABLE Žiro_Račun                ADD CONSTRAINT Žiro_Račun_Pk                PRIMARY KEY ( Žr_Id,Fakultet_Fakultetid );
@@ -324,7 +324,7 @@ INSERT INTO Čas VALUES('MIFS13','Vezbe',null,1,'Primena znanja u praksi');
 INSERT INTO Čas VALUES('MIFS14','Teorija',null,1,'Usmeno predavanje');
 INSERT INTO Čas VALUES('FIFS12','Teorija',null,2,'Usmeno predavanje');
 INSERT INTO Čas VALUES('OEFS12','Teorija',null,4,'Usmeno predavanje');
-----Gotovo->Proveri vezu
+----Gotovo
 INSERT INTO Obaveza VALUES('OBCDS11','01-JAN-2020','20-JAN-2020',15,null,'MIFS12',2022001,1);
 INSERT INTO Obaveza VALUES('OBCDS12','02-JAN-2020','30-MAR-2020',25,null,'MIFS13',2022001,1);
 INSERT INTO Obaveza VALUES('OBCDS13','15-JAN-2020','25-JAN-2020',15,null,'MIFS14',2022001,1);
