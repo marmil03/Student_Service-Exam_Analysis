@@ -1,5 +1,5 @@
 # Student_service-Exam_Analysis
-First ever database, created as high school project over a span of 2 school years.\
+First ever fully fledged database, created as high school project over a span of 2 school years.\
 \
 This project was mandatory part of Databases class that i had in high school.\
 It was done in two parts.\
@@ -11,7 +11,7 @@ Second part was its realisation, it was done over 3 months (March-May 2021.) and
 Database isn't perfect, as expected, since its cruical part (design) was done when i had only the basic ideas about databases.\
 Most of its shortcomings i found when i was creating it in the third year.\
 \
-Database was created in Oracle Sql and the projects' paper contains some PL/SQL examples.
+Database was created in Oracle Sql and the project's paper contains some PL/SQL examples.
 \
 Data inside the database isn't reall and is just a placehoder data used for doing tasks on the database.\
 There are two scripts:\
