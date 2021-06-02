@@ -1,5 +1,5 @@
 # Student_service-Exam_Analysis
-First ever fully fledged database, created as high school project over a span of 2 school years.\
+First fully fledged database, created as high school project over a span of 2 school years.\
 \
 This project was mandatory part of Databases class that i had in high school.\
 It was done in two parts.\
