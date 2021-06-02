@@ -12,3 +12,5 @@ Database isn't perfect, as expected, since its cruical part (design) was done wh
 Most of its shortcomings i found when i was creating it in the third year.\
 \
 Database was created in Oracle Sql and the projects' paper contains some PL/SQL examples.
+\
+Data inside the database isn't reall and is just a placehoder data used for doing tasks on the database.
